@@ -46,6 +46,19 @@
        console.log($("input[name='number1']:checked").val());
        console.log($("input[name='number2']:checked").val());
  
+       app.post("/api", function(req, res) {
+    // req.body hosts is equal to the JSON post sent from the user
+    // This works because of our body parsing middleware
+    var personInfo = req.body;
+  
+    console.log(personInfo);
+  
+    // We then add the json the user sent to the character array
+    People.push(personInfo);
+  
+    // We then display the JSON to the users
+    res.json(personInfo);
+  });
     });
 
     // Get the modal
@@ -73,6 +86,11 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+
+
 
 
 </script>
