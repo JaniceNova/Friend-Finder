@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  html body { 
+    background: url(../data/Empty-Backdrop-from-The-Great-Mouse-Detective-disney-crossover-29269310-1557-939.jpg) no-repeat center center fixed; 
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    cursor: pointer;
+    line-height: 1.2;
+    font-size: 25px;
+    text-align: center;
+   
+  }
+
+  #finder {
+font-size:190px;
+font-weight: 800;
+color: rgb(128, 94, 9);
+  }
+
+  #hello {
+font-size:40px;
+border: solid goldenrod 4px;s
+
+  }
