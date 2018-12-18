@@ -4,7 +4,15 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+html body { 
+  background: url(../data/Whitechapel_Spitalfields_7_murders.JPG) no-repeat center center fixed; 
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  cursor: pointer;
+  line-height: 1.2;
+}
 
 /* The Modal (background) */
 .modal {
@@ -42,4 +50,15 @@ html {
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  #questionBox {
+    background-color: lightgreen;
+    margin-left:15%;
+    margin-right: 15%;
+    margin-top:5%;
+    opacity: .6;
+    border-radius: 10px;
+    border: solid 2px gray;
+
   }
