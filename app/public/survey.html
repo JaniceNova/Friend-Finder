@@ -12,14 +12,23 @@
 
 <body>
     <div>Question 1
-        <input type="radio" name="number1" value="1"> 1<br>
-        <input type="radio" name="number1" value="2"> 2<br>
+      <br><br>
+        <input type="radio" name="number1" value="1"> 1
+        <input type="radio" name="number1" value="2"> 2
         <input type="radio" name="number1" value="3"> 3
+        <input type="radio" name="number1" value="3"> 4
+        <input type="radio" name="number1" value="3"> 5
+        <br><br>
+
     </div>
     <div id="q2">Question 2
         <input type="radio" name="number2" value="1"> 1<br>
         <input type="radio" name="number2" value="2"> 2<br>
-        <input type="radio" name="number2" value="3"> 3</div>
+        <input type="radio" name="number2" value="3"> 3<br>
+        <input type="radio" name="number2" value="3"> 4<br>
+        <input type="radio" name="number2" value="3"> 5<br>
+      </div>
+
 
 
     <button type="submit" id="submit">Submit</button>
@@ -46,7 +55,7 @@
        console.log($("input[name='number1']:checked").val());
        console.log($("input[name='number2']:checked").val());
  
-       app.post("/api", function(req, res) {
+       $.post("/api/people", function(req, res) {
     // req.body hosts is equal to the JSON post sent from the user
     // This works because of our body parsing middleware
     var personInfo = req.body;
@@ -60,6 +69,14 @@
     res.json(personInfo);
   });
     });
+
+
+
+
+
+
+
+    
 
     // Get the modal
 var modal = document.getElementById('myModal');

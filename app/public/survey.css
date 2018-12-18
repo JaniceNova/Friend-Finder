@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */

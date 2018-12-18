@@ -7,7 +7,29 @@
 // var tableData = require("../data/");
 // var waitListData = require("../data/");
 
-
+var People = [
+    {
+      routeName: "yoda",
+      name: "Yoda",
+      role: "Jedi Master",
+      age: 900,
+      forcePoints: 2000
+    },
+    {
+      routeName: "darthmaul",
+      name: "Darth Maul",
+      role: "Sith Lord",
+      age: 200,
+      forcePoints: 1200
+    },
+    {
+      routeName: "obiwankenobi",
+      name: "Obi Wan Kenobi",
+      role: "Jedi Master",
+      age: 55,
+      forcePoints: 1350
+    }
+  ];
 // ===============================================================================
 // ROUTING
 // ===============================================================================
@@ -20,12 +42,12 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.get("/api/people", function(req, res) {
-    res.json(tableData);
+    res.json(People);
   });
 
-  app.get("/api/:people", function(req, res) {
-    res.json(waitListData);
-  });
+//   app.get("/api/:people", function(req, res) {
+//     res.json(waitListData);
+//   });
 
   // API POST Requests
   // Below code handles when a user submits a form and thus submits data to the server.
