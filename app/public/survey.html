@@ -11,16 +11,23 @@
 </head>
 
 <body>
-  <div id="questionBox">
-    <div>Question 1
-      <br><br>
-        <input type="radio" name="number1" value="1"> 1
-        <input type="radio" name="number1" value="2"> 2
-        <input type="radio" name="number1" value="3"> 3
-        <input type="radio" name="number1" value="3"> 4
-        <input type="radio" name="number1" value="3"> 5
-        <br><br>
 
+
+  <div id="questionBox">
+
+    <div>I'm going to need you to answer a few questions...</div> <br> 
+    <div>Do you like taking strolls at night?
+      <br><br>
+     <div class="questionBar">
+          Disagree
+        <input type="radio" name="number1" value="1"/>
+       <input type="radio" name="number1" value="2"/>
+        <input type="radio" name="number1" value="3" />
+        <input type="radio" name="number1" value="3" />
+         <input type="radio" name="number1" value="3" /> Agree
+          
+        <br><br>
+      </div>
     </div>
     <div id="q2">Question 2
         <input type="radio" name="number2" value="1"> 1<br>
@@ -29,7 +36,15 @@
         <input type="radio" name="number2" value="3"> 4<br>
         <input type="radio" name="number2" value="3"> 5<br>
       </div>
-
+      <div>
+          <ul class="likert">
+              <li class="likert"> Not Guilty <input id="radGuiltyStart" type="radio" name="Guilty" value="1" />
+              <li class="likert"><input type="radio" name="Guilty" value="2" />
+              <li class="likert"><input type="radio" name="Guilty" value="3" />
+              <li class="likert"><input type="radio" name="Guilty" value="4" />
+              <li class="likert"><input id="radGuiltyEnd" type="radio" name="Guilty" value="5" /> Very Guilty
+          </ul>
+      </div>
 
 
     <button type="submit" id="submit">Submit</button>

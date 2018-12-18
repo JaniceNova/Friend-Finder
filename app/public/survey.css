@@ -12,8 +12,22 @@ html body {
   background-size: cover; 
   cursor: pointer;
   line-height: 1.2;
+  font-size: 25px;
+ 
 }
-
+  #questionBox {
+   
+    background-color:gray;
+    margin-left:15%;
+    margin-right: 15%;
+    margin-top:5%;
+   
+    border-radius: 10px;
+    border: solid 4px lightslategray;
+    padding: 40px;
+   
+   
+  }
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -52,13 +66,19 @@ html body {
     cursor: pointer;
   }
 
-  #questionBox {
-    background-color: lightgreen;
-    margin-left:15%;
-    margin-right: 15%;
-    margin-top:5%;
-    opacity: .6;
-    border-radius: 10px;
-    border: solid 2px gray;
 
+
+
+
+  .questionBar{
+    font-size: 17px;
+    
+    border-radius: 15px;
+    opacity: 1;
+    width: 300px;
+    text-align: center;
+    padding-top:15px;
+    border: solid 4px lightslategray;
+    /* opacity: 1; */
+    
   }
