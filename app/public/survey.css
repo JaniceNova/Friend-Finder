@@ -88,3 +88,12 @@ html body {
     /* opacity: 1; */
     
   }
+#submit {
+  background-color: gray;
+  border: solid 4px lightslategray;
+  color:black;
+  border-radius: 15px;
+  font-size:25px;
+  padding: 10px;
+
+}
