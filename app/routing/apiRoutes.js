@@ -6,40 +6,8 @@
 
 // var tableData = require("../data/");
 // var waitListData = require("../data/");
+ var friends = require("../data/friends");
 
-var People = [
-    {
-      routeName: "unicorn",
-      name: "Unicorn",
-      role: "Pink pretty partner!",
-
-      
-    },
-    {
-      routeName: "dragon",
-      name: "Dragon",
-      role: "Fire-breathing fierce familiar!",
-      age: 200,
-      forcePoints: 1200
-    },
-    {
-      routeName: "fairy",
-      name: "Fairy",
-      role: "Magical mischievous mate!",
-      age: 55,
-      forcePoints: 1350
-    },
-    {
-      routeName: "cat",
-      name: "Gnome",
-      role: "Cool chill chum!",
-      age: 55,
-      forcePoints: 1350
-    }
-
-
-
-  ];
 // ===============================================================================
 // ROUTING
 // ===============================================================================
@@ -93,3 +61,5 @@ module.exports = function(app) {
 //     res.json({ ok: true });
 //   });
  };
+
+
