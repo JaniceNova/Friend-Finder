@@ -241,18 +241,89 @@ var creatures = [
     $("input[name='number10']:checked").val()
     ]
 console.log(person)
-var number=0;
+var number0=0;
+var number1 =0;
+var number2=0;
+var number3 =0;
     for (var i=0; i<person.length; i++) {
 
       if(parseInt(person[i])>parseInt(creatures[0].answers[i])){
-      number = parseInt(person[i]) - parseInt(creatures[0].answers[i]) + number;
+      number0 = parseInt(person[i]) - parseInt(creatures[0].answers[i]) + number0;
+      console.log(number0)
       }
       else{
-        number = parseInt(person[i]) - parseInt(creatures[0].answers[i]) + number;
+        number0 =  parseInt(creatures[0].answers[i]) - parseInt(person[i])+ number0;
+        console.log(number0)
+      }
+      if(parseInt(person[i])>parseInt(creatures[1].answers[i])){
+      number1 = parseInt(person[i]) - parseInt(creatures[1].answers[i]) + number1;
+      console.log(number1)
+      }
+      else{
+        number1 =  parseInt(creatures[1].answers[i]) - parseInt(person[i])+ number1;
+        console.log(number1)
+      }
+
+      if(parseInt(person[i])>parseInt(creatures[2].answers[i])){
+      number2 = parseInt(person[i]) - parseInt(creatures[2].answers[i]) + number2;
+      console.log(number2)
+      }
+      else{
+        number2 =  parseInt(creatures[2].answers[i]) - parseInt(person[i])+ number2;
+        console.log(number2)
+      }
+
+      if(parseInt(person[i])>parseInt(creatures[3].answers[i])){
+      number3 = parseInt(person[i]) - parseInt(creatures[3].answers[i]) + number3;
+      console.log(number3)
+      }
+      else{
+        number3 =  parseInt(creatures[3].answers[i]) - parseInt(person[i])+ number3;
+        console.log(number3)
       }
 
     }
-console.log(number);
+  console.log(number0 + "num0");  
+console.log(number1 + "num1");
+console.log(number2 + "num2");
+console.log(number3 + "num3");
+
+if( number0>number1){
+  if(number1>number2){
+    if(number2>number3){
+      console.log(number3 + "number 3 is lowest")
+    }
+    else{
+      console.log(number2 + "number 2 is lowest")
+    }
+ 
+  } 
+  else if (number1>number3){
+    console.log(number3 + "number 3 is lowest")
+
+    }
+    else {
+      console.log(number1 + "number 1 is lowest")
+    }
+}
+else if (number0>number2){
+  if(number2>number3){
+    console.log(number3 + "number 3 is lowest")
+  }
+  else{
+    console.log(number2 + "number 2 is lowest")
+  }
+}
+else if (number0>number3){
+  console.log(number3 + "number 3 is lowest")
+}
+else {
+  console.log(number0 + "number 0 is lowest")
+}
+
+
+
+
   });
 
 
