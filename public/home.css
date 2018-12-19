@@ -5,26 +5,40 @@ html {
     box-sizing: inherit;
   }
   html body { 
-    background: url(../data/Empty-Backdrop-from-The-Great-Mouse-Detective-disney-crossover-29269310-1557-939.jpg) no-repeat center center fixed; 
-     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
+
     cursor: pointer;
     line-height: 1.2;
     font-size: 25px;
     text-align: center;
+    background-color: aquamarine;
    
   }
 
+#center {
+  display: inline-block;
+}
+
+div.divBox {
+  background-color: rgb(237, 118, 248);
+  margin-left:15%;
+  margin-right: 15%;
+  margin-top:5%;
+ 
+  border-radius: 10px;
+  border: solid 7px rgb(235, 255, 120);
+  padding: 40px;
+  text-align: center;
+}
   #finder {
-font-size:190px;
+font-size:130px;
 font-weight: 800;
-color: rgb(128, 94, 9);
+color: black;
   }
 
   #hello {
 font-size:40px;
-border: solid goldenrod 4px;
+border: solid  rgb(235, 255, 120) 4px;
+width:300px;
+border-radius: 30px;
 
   }
