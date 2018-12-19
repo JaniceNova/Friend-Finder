@@ -9,29 +9,36 @@
 
 var People = [
     {
-      routeName: "AronKosinski",
-      name: "Aron Kosinski",
-      role: "Polish immigrant",
-      age: 900,
-      forcePoints: 2000
+      routeName: "unicorn",
+      name: "Unicorn",
+      role: "Pink pretty partner!",
+
+      
     },
     {
-      routeName: "MontagueJohnDruitt",
-      name: "Montague John Druitt",
-      role: "barrister",
+      routeName: "dragon",
+      name: "Dragon",
+      role: "Fire-breathing fierce familiar!",
       age: 200,
       forcePoints: 1200
     },
     {
-      routeName: "MichaelOstrog",
-      name: "Michael Ostrog",
-      role: "Russian doctor",
+      routeName: "fairy",
+      name: "Fairy",
+      role: "Magical mischievous mate!",
+      age: 55,
+      forcePoints: 1350
+    },
+    {
+      routeName: "cat",
+      name: "Gnome",
+      role: "Cool chill chum!",
       age: 55,
       forcePoints: 1350
     }
 
 
-    
+
   ];
 // ===============================================================================
 // ROUTING
